@@ -41,6 +41,8 @@ render(){
             <div>$ {apartment.rent}</div>
             <div><strong>Description</strong></div>
             <div>{apartment.description}</div>
+            <div><strong>Contact</strong></div>
+            <div><a href={"mailto:" + apartment.email}>Email</a></div>
             <GoogleMapsForm className="map" address={apartment.address}/>
           </div>
         );
